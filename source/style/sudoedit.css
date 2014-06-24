@@ -1,0 +1,62 @@
+#app_mainView_sudoFiles_channelName, div[id ^= app_mainView_sudoFiles_fittableColumns] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-bottom: 2px solid #bbbbbb;
+	background-color: #cccccc;
+}
+
+#app_mainView_sudoFiles_channelName, div[id ^= app_mainView_sudoFiles_fileName_] {
+	padding-top: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#app_mainView_sudoFiles_channelList_port, div[id ^= app_mainView_sudoFiles_fileList_] {
+	background-color: #dddddd;
+}
+
+#app_mainView_sudoEdit_title {
+	padding-left: 5%;
+	padding-top: 30px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+button[type ^= button] {
+	margin-right: 5px;
+}
+
+input[id ^= app_mainView_sudoFiles] {
+	width: 100%;
+}
+
+#app_mainView_sudoFiles_settings {
+	width: 350px;
+	padding-left: 15px;
+}
+
+#app_mainView_sudoEdit_menuDecorator {
+	margin-top: 10px;
+}
+
+#app_mainView_sudoEdit_fileEdit {
+	margin-left:5%; 
+	margin-top: 5%;
+	width: 90%;
+}
+
+#app_mainView_sudoEdit_buttonDecorator {
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+
+#cke_app_mainView_sudoEdit_edit {
+	width: 100%;
+}
+
+
+
+
+
