@@ -4,7 +4,7 @@
 	"vendor": "avEnter",
 	"type": "web",
 	"main": "index.html",
-	"title": "avSipgate",
+	"title": "SIP CallManager",
 	"icon": "icon.png",
     "uiRevision": "2"	
 }
