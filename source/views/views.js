@@ -5,8 +5,7 @@ enyo.kind({
 	arrangerKind: "CollapsingArranger",
 	components:[
 		{kind: "enyo.Panels", fit: true, arrangerKind: "CollapsingArranger", components: [
-			{name: "sudoFiles", kind: "MyApps.FilesPane", style: "min-width: 300px"},
-			{name: "sudoEdit", kind: "MyApps.EditPane"}
+			{name: "callPane", kind: "MyApps.CallPane", style: "min-width: 10px"},
 		]}
 	]
 });

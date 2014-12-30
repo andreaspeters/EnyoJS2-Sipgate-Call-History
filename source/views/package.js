@@ -1,5 +1,4 @@
 enyo.depends(
-	"filesPane.js",
-	"editPane.js",
+	"callPane.js",
 	"views.js"
 );
