@@ -62,6 +62,14 @@ div[id $= reload] {
 	font-weight: bold;
 }
 
+#app_mainView_callPane_info {
+	text-align: center;
+}
+
+#app_mainView_callPane_tooltipDecorator3 {
+	float: right;
+}
+
 
 
 

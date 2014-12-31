@@ -50,6 +50,10 @@ enyo.kind({
 			{kind: "onyx.TooltipDecorator", components: [
 				{kind: "onyx.IconButton", name: "btnReload", ondown: "clickReload", src:"assets/enyo-icons-master/spaz_enyo1_icons/icon-refresh.png", style: "margin-top: -6px;"},
 				{kind: "onyx.Tooltip", content: "Reload"}
+			]},
+			{kind: "onyx.TooltipDecorator", components: [
+				{kind: "onyx.IconButton", name: "btnInfo", ondown: "clickInfo", src:"assets/enyo-icons-master/sample_enyo2_icons/menu-icon-info.png", style: "margin-top: -6px;"},
+				{kind: "onyx.Tooltip", content: "Info"}
 			]}
 		]},
 
@@ -71,6 +75,7 @@ enyo.kind({
 			]}
 		]},
 
+		// Call2Click Dialog
 		{kind: "onyx.Popup", name: "callPhone", floating: true, centered: true, modal: true, scrim:true, components: [
 			{tag: "hr", content: "Call2Click"},
 			{name: "phoneNumber"},
@@ -78,6 +83,17 @@ enyo.kind({
 				{kind: "onyx.Button", name: "btnStartCallPhone", ondown: "btnClickStartCallPhone", style: "width: 50%;", content: "CALL", classes: "onyx-affirmative"},
 				{kind: "onyx.Button", name: "btnCancelCallPhone", ondown: "btnClickCancelCallPhone", style: "width: 40%; margin-left: 15px;", content: "Cancel", classes: "onyx-negative"}
 			]}
+		]},
+
+		// Info Dialog 
+		{kind: "onyx.Popup", name: "info", floating: true, centered: true, modal: true, scrim:true, components: [
+			{content: "Info"},
+			{tag: "hr"},
+			{content: "Callmanager for Sipgate - Version 0.0.1"},
+			{content: "by avEnter UG (haftungsbeschraenkt)"},
+			{content: "License: GNU General Public License"},
+			{content: 'Please Donate: <a href="https://www.aventer.biz/104-0-donate.html">https://www.aventer.biz/104-0-donate.html</a> ', allowHtml: true}
+			
 		]},
 	],
 
@@ -185,6 +201,10 @@ enyo.kind({
 
 	clickReload: function(inSender, inEvent) {
 		this.loadHistory(this);
+	},
+
+	clickInfo: function(inSender, inEvent) {
+		this.$.info.show();
 	},
 
 	loadHistory: function(inSender) {
